@@ -1,0 +1,28 @@
+Carter Nakagawa
+HW5
+In the following table:
+-----------------------
+BuildT is the build time, which should be O(log N)
+SearchS should be essentially 0 since it does reverseMatch when K is small
+SearchL should be O(N) since it does reverseMatch when K is N/2
+N	BuildT	SearchS	SearchL
+2048	0.078	0.001	0.054
+4096	0.078	0.000	0.043
+8192	0.197	0.000	0.087
+16384	0.340	0.000	0.189
+32768	0.600	0.000	0.348
+65536	1.345	0.000	0.682
+131072	3.479	0.000	1.475
+262144	8.819	0.000	4.715
+
+In the following table:
+-----------------------
+BuildT is the build time, which should be O(log N)
+SearchT should be O(N) since reverseMatch returns K=N values
+N	BuildT	SearchT
+2048	0.038	0.078
+4096	0.098	0.077
+8192	0.172	0.192
+16384	0.299	0.343
+32768	0.611	0.668
+65536	1.442	1.933
